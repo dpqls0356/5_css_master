@@ -41,3 +41,8 @@ const assets = gulp.series([styles]);
 const live = gulp.parallel([watch]);
 
 export const dev = gulp.series([prepare, assets, live]);
+function mynewtask(done) {
+  // YOUR CODE HERE
+
+  done();
+}
