@@ -54,7 +54,7 @@ header > div:nth-child(3) {
   }
   div {
     grid-area: "main-info-right-box";
-    background-color: beige;
+    background-color: #f3ede8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,10 +84,18 @@ header > div:nth-child(3) {
   }
 }
 .cardpart {
+  h1 {
+    color: $gray-color;
+    font-size: 10px;
+    margin-bottom: 35px;
+  }
   div {
-    background-color: #f1e2d7;
+    background-color: #dee8e9;
   }
   margin-bottom: 80px;
+}
+.cardpart-orange div {
+  background-color: #f9dbbe;
 }
 .items {
   display: flex;
@@ -269,5 +277,27 @@ footer {
     background-color: inherit;
     width: 45px;
     height: 45px;
+  }
+}
+
+main > div:last-child {
+  font-size: 35px;
+  font-family: $second-font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+
+  p:last-child {
+    margin-left: 10px;
+    color: gray;
+  }
+}
+
+.img-grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  img {
+    width: 100%;
   }
 }
