@@ -17,28 +17,28 @@ header {
   height: 50px;
   padding: 15px 130px;
   font-size: 12px;
-}
-header > div {
-  width: 33%;
-  display: flex;
-  align-items: center;
-}
-header > div:nth-child(1),
-header > div:nth-child(3) {
-  display: flex;
-  div:first-child {
-    margin-right: 30px;
+  & > div {
+    width: 33%;
+    display: flex;
+    align-items: center;
+  }
+  & > div:nth-child(1),
+  & > div:nth-child(3) {
+    display: flex;
+    div:first-child {
+      margin-right: 30px;
+    }
+  }
+  & > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+  & > div:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
   }
 }
-header > div:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-header > div:nth-child(3) {
-  display: flex;
-  justify-content: flex-end;
-}
-
+// 니코쌤은 이미지를 하나의 박스에 넣는게 아니라 background값으로 줘서 만드네...
 .info {
   top: 20px;
   z-index: -99;
