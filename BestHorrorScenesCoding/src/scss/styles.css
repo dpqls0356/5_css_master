@@ -2,21 +2,19 @@
 * {
   box-sizing: border-box;
 }
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: grid;
   grid-template: "main" "movie-info" 1fr/0.65fr 1fr;
 }
-header,
-main {
-  overflow: scroll;
-}
+
 header {
+  overflow: scroll;
   grid-area: "main";
   padding: 10vh 0 70px 70px;
   color: #e7473c;
-  background-color: #f3f3f3;
+  background-color: rgb(243, 243, 243);
   letter-spacing: 1.5px;
 }
 header h1 {
@@ -24,11 +22,6 @@ header h1 {
   margin-bottom: 15%;
   letter-spacing: 5px;
   width: 70%;
-}
-header h2,
-header h3 {
-  width: 70%;
-  line-height: 1.2;
 }
 header h2 {
   font-size: 23px;
@@ -39,6 +32,11 @@ header h3 {
   font-size: 15px;
   text-align: justify;
   margin-bottom: 30px;
+}
+header h2,
+header h3 {
+  width: 70%;
+  line-height: 1.2;
 }
 header nav {
   font-size: 13px;
@@ -54,30 +52,31 @@ header nav ul li {
   margin-right: 15px;
   margin-top: 10px;
   padding-bottom: 5px;
-  border-bottom: 1.5px solid #6f6f6f;
+  border-bottom: 1.5px solid rgb(111, 111, 111);
 }
 header nav ul li a {
-  color: #6f6f6f;
+  color: rgb(111, 111, 111);
   text-decoration: none;
 }
 header nav ul li a:hover {
-  color: #000;
+  color: black;
 }
 header h4 {
   width: 80%;
-  color: #6f6f6f;
+  color: rgb(111, 111, 111);
   font-size: 10px;
 }
+
 main {
   grid-area: "movie-info";
-  color: #f3f3f3;
+  color: rgb(243, 243, 243);
   background-color: #e7473c;
+  overflow: scroll;
   width: 100%;
 }
 main .notice {
-  position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 0;
   height: 150px;
   width: 100%;
@@ -91,24 +90,13 @@ main .notice {
 }
 main .movie {
   padding: 33px 70px;
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.1) 5%,
-      transparent,
-      transparent,
-      transparent,
-      transparent
-    )
-    #e7473c;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) #e7473c;
 }
-main .movie-comment,
 main .movie-header {
   display: flex;
-  justify-content: space-between;
-}
-main .movie-header {
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -124,8 +112,7 @@ main .movie-content img {
   width: 100%;
   height: 55%;
   margin-bottom: 50px;
-  box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
-    inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 main .movie-content .movie-my-rating {
   display: flex;
@@ -134,11 +121,13 @@ main .movie-content .movie-my-rating {
 main .movie-comment {
   padding-top: 70px;
   padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
 }
-main .movie-comment,
-main .movie-content {
+main .movie-content,
+main .movie-comment {
   color: #821d17;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
-}
+}/*# sourceMappingURL=styles.css.map */
